@@ -11,7 +11,7 @@ my $kpid;
 my $in;
 my $out;
 my $host;
-my $port;
+my $port = 8080;
 my $name;
 my $socket;
 my $s;
@@ -27,11 +27,6 @@ chomp $name;
 &blue ("Please Enter the Host Address...\n\nAddress: ");
 $host = <STDIN>;
 chomp $host;
-&clear;
-
-&blue ("Please Enter the Host Port...\n\nPort: ");
-$port = <STDIN>;
-chomp $port;
 &clear;
 
 sub clear #clears the screen.
